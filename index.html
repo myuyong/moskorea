@@ -1,0 +1,662 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0,minimum-scale=1.0">
+    <title>모스버거 코리아 </title>
+    <!-- fullpage.css -->
+    <link rel="stylesheet" href="css/jquery.fullPage.css" type="text/css">
+    <!-- 사용자 정의 css -->
+    <link rel="stylesheet" href="css/moskorea.css" type="text/css">
+    <!-- favicon -->
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/icon">
+    <!-- swiper css -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <!-- 제이쿼리 라이브러리  -->
+    <script src="js/jquery-3.7.1.js"></script>
+    <!-- fullpage.js -->
+    <script src="js/jquery.fullpage.js"></script>
+    <!-- 폰트 어썸 -->
+    <script src="https://kit.fontawesome.com/93d77b263e.js" crossorigin="anonymous"></script>
+    <!-- 스와이퍼 js -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- 사용자 정의 js -->
+    <script src="js/moskorea.js"></script>
+</head>
+<body>
+    <div class="wrap">
+        <header>
+            <div class="centerBox">
+                <div class="search_lang mob">
+                    <div class="search">
+                        <input type="text" id="search">
+                        <a href="#">
+                            <!-- 돋보기 아이콘  -->
+                            <i class="fa-solid fa-magnifying-glass" alt="검색"></i>
+                        </a>
+                    </div>
+                </div> <!-- search_lang--> 
+                <!-- pc버전과 모바일 버전이 같은 버전 -->
+                <div class="logo"><a href="#"><img src="img/Asset 1.png" alt="메인로고"></a></div>
+                <!-- 내비게이션 영역 -->
+                
+                <div class="menubtn">
+                    <div class="menuButton">
+                        <a href="#">
+                            <img src="img/Vector.png" alt="메뉴버튼" class="MB">
+                        </a>
+                    </div>
+                </div>
+                <div class="menu">
+                    <div class="closeButton">
+                        <a href="#"><img src="img/211651_close_round_icon 1.png" alt="닫기버튼" class="CB"></a>
+                    </div>
+                    <div class="menuRed">
+                        <div class="language">
+                            <select name="" id="lang">
+                                <option value="kor">KOR</option>
+                                <option value="eng">ENG</option>
+                                <option value="jpn">JPN</option>
+                                <option value="cn">CN</option>
+                            </select>
+                        </div>
+                        <div class="imageBox">
+                            <img src="img/quickmenu-inquiry.png" alt="가맹문의">
+                            <img src="img/quickmenu-inquiry.png" alt="고객문의 ">
+                            <img src="img/quickmenu-origin.png" alt="딜리버리 안내">
+                        </div>
+                    </div>
+                    <div id="obox">
+                        <nav>
+                            <ul>
+                                <li>
+                                    <a href="#"><p>모스버거</p>
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="minus"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M432 256c0 17.7-14.3 32-32 32L48 288c-17.7 0-32-14.3-32-32s14.3-32 32-32l352 0c17.7 0 32 14.3 32 32z"/></svg>
+                                    <svg class="plus" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M256 80c0-17.7-14.3-32-32-32s-32 14.3-32 32V224H48c-17.7 0-32 14.3-32 32s14.3 32 32 32H192V432c0 17.7 14.3 32 32 32s32-14.3 32-32V288H400c17.7 0 32-14.3 32-32s-14.3-32-32-32H256V80z"/></svg>
+                                    </a>
+                                    <ul class="sub">
+                                        <li>
+                                            <a href="#">모스버거 소개</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">모스버거 약속</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">모스버거 연혁</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">찾아오시는 길</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">헬프라인</a> 
+                                        </li>
+                                    </li>
+                                </ul>
+                                <li>
+                                    <a href="#"><p>메뉴소개</p>
+                                    <svg class="plus" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M256 80c0-17.7-14.3-32-32-32s-32 14.3-32 32V224H48c-17.7 0-32 14.3-32 32s14.3 32 32 32H192V432c0 17.7 14.3 32 32 32s32-14.3 32-32V288H400c17.7 0 32-14.3 32-32s-14.3-32-32-32H256V80z"/></svg>
+                                    </a>
+                                    <ul class="sub">
+                                        <li>
+                                            <a href="#">신메뉴</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">버거</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">세트</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">사이드</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">음료&디저트</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#">매장안내</a>
+                                </li>
+                                <li>
+                                    <a href="#"><p>모스소식</p>
+                                    
+                                    <svg class="plus" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M256 80c0-17.7-14.3-32-32-32s-32 14.3-32 32V224H48c-17.7 0-32 14.3-32 32s14.3 32 32 32H192V432c0 17.7 14.3 32 32 32s32-14.3 32-32V288H400c17.7 0 32-14.3 32-32s-14.3-32-32-32H256V80z"/></svg>
+                                    </a>
+                                    <ul class="sub">
+                                        <li>
+                                            <a href="#">모스소식</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">이벤트</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="pointMenu">
+                                    <a href="#"><p>가맹안내</p>
+                                    <svg class="plus" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M256 80c0-17.7-14.3-32-32-32s-32 14.3-32 32V224H48c-17.7 0-32 14.3-32 32s14.3 32 32 32H192V432c0 17.7 14.3 32 32 32s32-14.3 32-32V288H400c17.7 0 32-14.3 32-32s-14.3-32-32-32H256V80z"/></svg>
+                                    </a>
+                                    <ul class="sub">
+                                        <li>
+                                            <a href="#">모스버거 경쟁력</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">인테리어</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">개설 비용</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">개설 절차</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">개설 문의</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </nav>
+                        <div class="search_lang pc">
+                            <div class="search">
+                                <input type="text" id="search">
+                                <a href="#">
+                                    <!-- 돋보기 아이콘  -->
+                                    <i class="fa-solid fa-magnifying-glass" alt="검색"></i>
+                                </a>
+                            </div>
+                        </div> <!-- search_lang--> 
+                        
+                    </div>
+                    <div class="sns">
+                        <div>
+                            <a href="#">
+                                <img src="img/sns-head-ico-facebook (1).gif" alt="페이스북">
+                                <span>페이스북</span>
+                            </a>
+                        </div>
+                        <div>
+                            <a href="#">
+                                <img src="img/sns-head-ico-instagram (1).gif" alt="인스타그램">
+                                <span>인스타그램</span>
+                            </a>
+                        </div>
+                        <div>
+                            <a href="#">
+                                <img src="img/sns-head-ico-kakaotalk.gif" alt="카카오톡">
+                                <span>카카오톡</span>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- 탑메뉴 : pc버전에서는 보임 ,tablet,모바일 에서는 안보임  -->
+                    <div class="pc_top_menu">
+
+                    </div>
+                    <!-- 내비게이션 영역 -->
+                        
+                        <!-- tablet,pc에서는 안보이고, 모바일에서는 보임 -->
+                        <div class="mo_top_menu">
+                            
+                        </div>
+                        <!-- 닫기 버튼 :pc에서는 안보임,tablet과 모바일에서는 보임 -->
+                    </div>
+                <div class="sub_bg">
+
+                </div>    
+            </div><!-- menu -->
+        </header>
+        <section class="section s1">
+            <iframe width="1920" height="820" src="https://www.youtube.com/embed/LXJfvfpnnik?si=JBUC4ctDzHHS7S2z&controls=0&autoplay=1&mute=1&start=1030&loop=1&end=1130"
+            title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </section>
+        <section class="section s2">
+            <div class="centerBox">
+            <h2>모스 버거 추천 메뉴</h2>
+            <p>조금 느리더라도 신선하게,<br> 우리는 '정성을 담은 버거'를 만듭니다</p>
+            <div class="pc tab_menu">
+                <div >
+                    <a href ="#" class="active2">버거</a>
+                </div>
+                <div>
+                    <a href="#">사이드</a>
+                </div>
+                <div>
+                    <a href="#">음료&디저트</a>
+                </div>
+                <div>
+                    <a href="#">아침식사</a>
+                </div>
+            </div>
+            <!-- 버거 메뉴 슬라이드  -->
+          <div class="swiper_box">
+            <div class="swiper mySwiper1 ep1">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <div>
+                        <img src="img/ham1.png" alt="스노우 모스버거">
+                        <p>스노우 모스버거</p>
+                        <p>Snow Mos Burger</p>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="img/ham2.png" alt="와규치즈버거">
+                    <p>와규치즈버거</p>
+                    <p>Wagyu cheese Burger</p>
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="img/ham3.jpg" alt="모스버거 세트">
+                    <p>모스버거 세트</p>
+                    <p>Mos burger Set</p>
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="img/ham4.jpg" alt="모스치즈버거">
+                    <p>모스치즈버거</p>
+                    <p>Mos cheese Burger</p>
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="img/ham5.jpg" alt="스테이크 BBQ버거">
+                    <p>스테이크 BBQ버거</p>
+                    <p>Steak BBQ Burger</p>
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="img/ham6.png" alt="골든크리스피 치킨버거">
+                    <p>골든크리스피 치킨버거</p>
+                    <p>Golden Crispy Chicken Burger</p>
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="img/ham7.jpg" alt="리치더블치즈버거">
+                    <p>리치더블 치즈버거</p>
+                    <p>Rich Double cheese Burger</p>
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="img/ham8.png" alt="불고기 버거">
+                    <p>불고기 버거</p>
+                    <p>Bulgogi Burger</p>
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="img/ham9.png" alt="모스 bbq 치즈버거">
+                    <p>모스 BBQ 치즈버거</p>
+                    <p>Mos BBQ Cheese Burger</p>
+                  </div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
+                <div class="autoplay-progress">
+                  <svg viewBox="0 0 48 48">
+                    <circle cx="24" cy="24" r="20"></circle>
+                  </svg>
+                  <span></span>
+                </div>
+            </div>
+            <!-- 사이드 메뉴 슬라이드 -->
+            <div class="swiper mySwiper2 ep2">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <img src="img/side1.jpg" alt="어니언 링">
+                    <p>어니언 링</p>
+                    <p>Onion Rings</p>
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="img/side2.png" alt="통새우 너겟">
+                    <p>통새우 너겟</p>
+                    <p>Shrimp Nuggets</p>
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="img/side3.png" alt="버터플라이 쉬림프">
+                    <p>버터플라이 쉬림프</p>
+                    <p>Butterfly Shrimp</p>
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="img/side4.jpg" alt="후렌치 후라이">
+                    <p>후렌치 후라이</p>
+                    <p>French Fries</p>
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="img/side5.jpg" alt="케이준 치킨 텐더">
+                    <p>케이준 치킨 텐더</p>
+                    <p>Cajun Chicken Tenders</p>
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="img/side6.jpg" alt="고구마 치즈볼">
+                    <p>고구마 치즈볼</p>
+                    <p>Sweet Potato Cheese Balls</p>
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="img/side7.jpg" alt="가라아게 치킨">
+                    <p>가라아게 치킨</p>
+                    <p>Kara-age Chicken</p>
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="img/side8.jpg" alt="치즈스틱">
+                    <p>치즈스틱</p>
+                    <p>Cheese Sticks</p>
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="img/side9.jpg" alt="할라피뇨 치즈 후라이">
+                    <p>할라피뇨 치즈 후라이</p>
+                    <p>Jalapeño Cheese Fries</p>
+                  </div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
+                <div class="autoplay-progress">
+                  <svg viewBox="0 0 48 48">
+                    <circle cx="24" cy="24" r="20"></circle>
+                  </svg>
+                  <span></span>
+                </div>
+            </div>
+            <!-- 음료&디저트 슬라이드 -->
+            <div class="swiper mySwiper3 ep3">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <img src="img/drink1.jpg" alt="코카콜라">
+                    <p>코카콜라</p>
+                    <p>Coca Cola</p>
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="img/drink2.jpg" alt="제주한라봉소다">
+                    <p>제주한라봉소다</p>
+                    <p>Jeju Hanrabong Soda</p>
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="img/drink3.jpg" alt="스프라이트">
+                    <p>스프라이트</p>
+                    <p>Sprite</p>
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="img/drink4.jpg" alt="환타오렌지">
+                    <p>환타오렌지</p>
+                    <p>Fanta Orange</p>
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="img/drink5.jpg" alt="피크닉 사과쥬스">
+                    <p>피크닉 사과쥬스</p>
+                    <p>Picnic Apple Juice</p>
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="img/drink6.jpg" alt="환타포도">
+                    <p>환타포도</p>
+                    <p>Fanta Grape</p>
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="img/drink7.jpg" alt="모스 소프트 아이스크림">
+                    <p>모스 소프트크림</p>
+                    <p>Mos Soft cream</p>
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="img/drink8.jpg" alt="메론소다">
+                    <p>메론소다</p>
+                    <p>Melon Soda</p>
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="img/drink9.png" alt="코카콜라 제로">
+                    <p>코카콜라 제로</p>
+                    <p>Coca Cola Zero</p>
+                  </div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
+                <div class="autoplay-progress">
+                  <svg viewBox="0 0 48 48">
+                    <circle cx="24" cy="24" r="20"></circle>
+                  </svg>
+                  <span></span>
+                </div>
+            </div>
+            <!-- 아침식사슬라이드  -->
+            <div class="swiper mySwiper4 ep4">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <img src="img/mor1.jpg" alt="리코타치즈 샐러드">
+                    <p>리코타치즈 샐러드</p>
+                    <p>Ricotta Cheese Salad</p>
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="img/mor2.jpg" alt="에그그린샐러드">
+                    <p>에그그린샐러드</p>
+                    <p>Egg Green Salad</p>
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="img/mor3.jpg" alt="베이컨 오믈렛">
+                    <p>베이컨 오믈렛</p>
+                    <p>Bacon Omelet</p>
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="img/mor4.jpg" alt="베이컨 치즈 오믈렛">
+                    <p>베이컨 치즈 오믈렛</p>
+                    <p>Bacon Cheese Omelet</p>
+                  </div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
+                <div class="autoplay-progress">
+                  <svg viewBox="0 0 48 48">
+                    <circle cx="24" cy="24" r="20"></circle>
+                  </svg>
+                  <span></span>
+                </div>
+            </div>
+          </div>
+            <div class="burger">
+                <div class="bp">
+                    <div class="bug_pic">
+                        <img src="img/ham1.png" alt="햄버거1">
+                    </div>
+                    <div class="bug_text">
+                        <p>리치 더블 치즈버거</p>
+                    </div>
+                </div>
+                <!-- 모바일에서만 작동되는 메뉴판 -->
+                <div class="bp">
+                    <div class="bug_pic">
+                        <img src="img/ham2.png" alt="햄버거2">
+                    </div>
+                    <div class="bug_text">
+                        <p>리치 더블 치즈버거</p>
+                    </div>
+                </div>
+                <div class="bp">
+                    <div class="bug_pic">
+                        <img src="img/ham8.png" alt="햄버거3">
+                    </div>
+                    <div class="bug_text">
+                        <p>리치 더블 치즈버거</p>
+                    </div>
+                </div>
+                <div class="bp">
+                    <div class="bug_pic">
+                        <img src="img/ham9.png" alt="햄버거4">
+                    </div>
+                    <div class="bug_text">
+                        <p>리치 더블 치즈버거</p>
+                    </div>
+                </div>
+            </div>
+            <button id="more">
+                <p>메뉴 더보기</p>
+            </button>     
+        </div>
+        </section>
+        <section class="section s3">
+          <div class="centerBox">
+           
+            <!--  -->
+            <h2>모스 뉴스</h2><br>
+            <p>모스버거의 신제품을 한눈에</p>
+            <div class="more">
+              <button>
+                <a href="">
+                  더보기
+                </a>
+              </button>
+            </div>
+            <div class="bx">
+              <div class="poster">
+                <img src="img/poster.jfif" alt="유즈코쇼 와규치즈버거">
+                <p>맵싹한 유즈코쇼 마요소스와 아스파라거스의 조합 유즈코쇼 와규치즈버거</p>
+              </div>
+              <div class="poster_text">
+                <p>NEW!<br>
+                  향긋하면서 맵싹한 유즈코쇼 마요소스와 통 아스파라거스의 아삭함이 
+                  더해진 유즈코쇼 와규치즈버거
+                </p>
+              </div>
+              <div class="poster">
+                <img src="img/poster2.jfif" alt="매쉬드 포테이토 치즈버거">
+                <p>매쉬드 포테이토와 샐러드 고소한 크림치즈의 모스 프리미엄 버거</p>
+              </div>
+              <div class="poster_text">
+                <p>NEW!<br>
+                  부드럽고 담백달큰한 매쉬드 포테이토 샐러드와<br>
+                  고소한 크림치즈 소스의 풍미가 더해진 봄맞이 모스 프리미엄 버거
+                  </p>
+              </div>
+              <div class="poster">
+                <img src="img/poster3.jfif" alt="어메이징 쉬림프버거">
+                <p>바삭! 탱글! 통 새우 어메이징 쉬림프 버거 출시!</p>
+              </div>
+              <div class="poster_text">
+                <p>NEW!<br>
+                  바삭! 탱글! 통 새우와 통 버터플라이 쉬림프를 더블로!<br>
+                  매콤한 살사소스와 부드러운 아보카도 페스토의 어메이징한 맛의 조화<br>
+                  어메이징 쉬림프 버거 출시!
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="section s4">
+          <!-- row_box와 centerBox는 모바일에서는 보이지 않음 -->
+          <div class="row_box">
+            <div>
+              <img src="img/que1 1.png" alt="고객문의">
+              <p>고객문의</p>
+            </div>
+            <div>
+              <img src="img/phone 1.png" alt="가맹문의">
+              <p>가맹문의</p>
+            </div>
+            <div>
+              <img src="img/moto 1.png" alt="딜리버리 안내">
+              <p>딜리버리 안내</p>
+            </div>
+          </div>
+          <div class="centerBox">
+            <h2>한걸음 다가가는 모스버거</h2>
+            <p>당신의 곁에 언제나 모스버거</p>
+            
+          </div>
+          <!-- 연두색 바탕 로고 -->
+          <div class="mo_box">
+            <div>
+              <img src="img/mo_logo.gif" alt="모바일로고">
+            </div>
+            <div>
+              <p>모스버거 약속</p>
+            </div>
+            <div>
+              <p>모스버거 연혁</p>
+            </div>
+            <div>
+              <p>찾아오시는길</p>
+            </div>
+            <div>
+              <p>헬프라인</p>
+            </div>
+          </div>
+        </section>
+        <section class="section s5">
+          <div class="centerBox">
+            <div class="comu">
+              <div class="redBox">
+                <h3>모스버거</h3>
+                <p>1972년 어느 아침, 손님이 건넨 이 한마디가 모스버거의 모토입니다. 다른 패스푸드 가게보다 빠르진 않지만 '정성을 다해 갓 만든 버거를 제공하자'는 마음을 이어갑니다.<br> 오늘도 참 따뜻한 모스버거가 되겠습니다.</p>
+              </div>
+              <div class="conBox"> 
+                <div>
+                  <h3>모스버거 약속</h3>      
+                  <p>조금 느리더라도 신선하게</p>
+                </div>            
+                <div>
+                  <h3>모스버거</h3>
+                  <p>1972년 부터 이어온 모스버거</p>
+                </div>            
+                <div>
+                  <h3>찾아오시는 길</h3>
+                  <p>따뜻하게 맞이하는 모스버거</p>
+                </div>            
+                <div>
+                  <h3>헬프라인</h3>
+                  <p>함께 도우는 우리</p>
+                </div>            
+              </div>  
+            </div>
+          </div>
+        </section>
+        <footer class="section auto-height">
+          <div class="centerBox">
+            <!-- 로고 영역 -->
+            <div class="logo_box">
+              <a href="#">
+                <img src="img/footer-logo.gif" alt="로고이미지">
+              </a>
+            </div>
+            <!-- 개인정보 동의 약관 -->
+            <div class="personal">
+              <div>
+                <a href="#">
+                  <p>개인정보처리 방침</p>
+                </a>
+              </div>
+              <div>
+                <a href="#">
+                  <p>찾아오시는 길</p>
+                </a>
+              </div>
+              <div>
+                <a href="#">
+                  <p>이용약관</p>
+                </a>
+              </div>
+              <div>
+                <a href="#">
+                  <p>이메일 무단수집 거부 </p>
+                </a>
+              </div>
+            </div>
+            <!-- 주소 및 기업정보 -->
+            <div class="footerCenter">
+              <p>주식회사 모스버거코리아</p>
+              <address>주소: 06683 &#41; 서울 서초구 방배로 111 (방배동 ,근복빌딩) 3층 모스버거</address>
+              <p>대표: 방왕근 <br> 사업자등록번호 : 220-88-26499 <br>소비자 대표:02-1688-3813</p>
+            </div>
+            <!-- copyright -->
+            <div class="footerBottom">
+              
+                <p>공식계정</p>
+                <div class="emote">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M0 256a256 256 0 1 0 512 0A256 256 0 1 0 0 256zM281 385c-9.4 9.4-24.6 9.4-33.9 0s-9.4-24.6 0-33.9l71-71L136 280c-13.3 0-24-10.7-24-24s10.7-24 24-24l182.1 0-71-71c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0L393 239c9.4 9.4 9.4 24.6 0 33.9L281 385z"/></svg>
+                </div>
+                <div class="footerSns">
+                    <a href="#">
+                      <img src="img/footerSns1.gif" alt="페이스북">
+                    </a>
+                    <a href="#">
+                      <img src="img/footerSns2.gif" alt="인스타그램">
+                    </a>
+                    <a href="#">
+                      <img src="img/footerSns3.gif" alt="카카오톡">
+                    </a>
+                  </div>
+                  <div>
+                    <strong>Copyrightⓒ Since 2014 MOS BURGER KOREA. Co.,Ltd.</strong>
+                  </div>
+                </div>
+        </div>
+        </footer>
+    </div>
+</body>
+</html>
